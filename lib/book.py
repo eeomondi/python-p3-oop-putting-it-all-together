@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
+# lib/book.py
 class Book:
-    def __init__(self, title, author):
+    def __init__(self, title, page_count):
         self.title = title
-        self.author = author
+        self.page_count = page_count  # Add this line
         self.is_checked_out = False
 
     def check_out(self):
@@ -10,6 +10,7 @@ class Book:
 
     def return_book(self):
         self.is_checked_out = False
+
 
     
         
